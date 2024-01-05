@@ -21,19 +21,20 @@ const Editor = () => {
     }, [html, css, js])
 
     return (
-        <div>
-            <div>
-                <textarea value={html} type="text" onChange={(e) => {
+        <div className="wrapper">
+            <div className="header"></div>
+            <div className="input-cover">
+                <textarea value={html} placeholder="HTML" type="text" onChange={(e) => {
                     setHtml(e.target.value)
                 }} />
-                <textarea value={css} type="text" onChange={(e) => {
+                <textarea value={css} placeholder="CSS" type="text" onChange={(e) => {
                     setCss(e.target.value)
                 }} />
-                <textarea value={js} type="text" onChange={(e) => {
+                <textarea value={js} placeholder="JS" type="text" onChange={(e) => {
                     setJs(e.target.value)
                 }} />
             </div>
-            <div>
+            <div className="output">
                 <iframe 
                     srcDoc={codepenCode}
                     title="output"
