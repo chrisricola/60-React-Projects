@@ -29,13 +29,15 @@ const Editor = () => {
                 <span>CodePen</span>
             </div>
             <div className="input-cover">
-                <textarea value={html} placeholder="HTML" type="text" onChange={(e) => {
+                <textarea value={html} placeholder="HTML" type="text" className="input" onChange={(e) => {
                     setHtml(e.target.value)
                 }} />
-                <textarea value={css} placeholder="CSS" type="text" onChange={(e) => {
+                <div className="width"></div>
+                <textarea value={css} placeholder="CSS" type="text" className="input" onChange={(e) => {
                     setCss(e.target.value)
                 }} />
-                <textarea value={js} placeholder="JS" type="text" onChange={(e) => {
+                <div className="width"></div>
+                <textarea value={js} placeholder="JS" type="text" className="input" onChange={(e) => {
                     setJs(e.target.value)
                 }} />
             </div>

@@ -39,3 +39,46 @@ img {
   object-fit: cover;
   position: absolute;
 }
+
+.input-cover {
+  background-color: #000;
+  display: flex;
+  height: 48vh;
+  padding: 3rem 1.5rem 1.5rem 1.5rem;
+}
+
+.input {
+  background-color: #282828;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  width: 30%;
+  padding: 2rem;
+}
+
+.width {
+  background-color: #000;
+  width: 2%;
+}
+
+.output {
+  display: flex;
+  height: 50vh;
+}
+
+.input::-webkit-scrollbar {
+  width: 10px;
+}
+
+.input::-webkit-scrollbar {
+  background-color: #282828;
+}
+
+.input::-webkit-scrollbar-thumb {
+  background-color: #777;
+}
+
+.input::-webkit-scrollbar-thumb:hover {
+  background-color: #777;
+}
+
