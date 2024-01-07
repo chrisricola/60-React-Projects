@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import img from "./codepen_logo.png";
 import "./index.css";
+import useLocalStorage from "./storage";
 
 const Editor = () => {
-    const [html, setHtml] = useState("");
-    const [css, setCss] = useState("");
-    const [js, setJs] = useState("");
+    const [html, setHtml] = useLocalStorage("html", "");
+    const [css, setCss] = useLocalStorage("css", "");
+    const [js, setJs] = useLocalStorage("js", "");
     const [codepenCode, setCodepenCode] = useState("");
 
     useEffect(() => {
