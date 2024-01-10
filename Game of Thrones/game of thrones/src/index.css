@@ -14,7 +14,8 @@ body {
   justify-content: center;
   align-items: center;
   object-fit: cover;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./got_img.jpg');
+  object-fit: bottom;
 }
 
 .hero-banner {
