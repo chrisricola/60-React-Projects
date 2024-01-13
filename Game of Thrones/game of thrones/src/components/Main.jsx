@@ -18,10 +18,19 @@ const Main = () => {
     
 
   return (
-    <div>
+    <div className='main'>
+        <h1 style={{textTransform: 'uppercase'}}>Popular Characters</h1>
         {
             characters.map((item) => (
-                <><h1>{item.fullName}</h1><img src={item.imageUrl} alt="" /></>
+                <div className="projectCard">
+                    <img src={item.imageUrl} alt="" />
+                    <div className="info">
+                        <div className="text">
+                            <h2>{item.title}</h2>
+                            <p className='name'>{item.fullName}</p>
+                        </div>
+                    </div>
+                </div>
             ))
         }
     </div>
