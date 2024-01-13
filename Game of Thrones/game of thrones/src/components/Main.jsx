@@ -22,7 +22,7 @@ const Main = () => {
         <h1 style={{textTransform: 'uppercase'}}>Popular Characters</h1>
         {
             characters.map((item) => (
-                <div className="projectCard">
+                <div className="project-card">
                     <img src={item.imageUrl} alt="" />
                     <div className="info">
                         <div className="text">

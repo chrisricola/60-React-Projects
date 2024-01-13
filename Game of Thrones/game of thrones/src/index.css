@@ -45,8 +45,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  object-fit: cover;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./got_img.jpg');
+  object-fit: cover;
   object-fit: bottom;
 }
 
@@ -82,4 +82,50 @@ body {
   background: none;
   border: 2px solid #fff;
   color: #fff;
+}
+
+.main {
+  background-color: #000;
+}
+
+.project-card {
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid #000;
+  margin: 20px auto;
+  color: #fff;
+  background-color: #000;
+}
+
+.project-card:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.project-card img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+}
+
+.texts h2 {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.name {
+  font-size: 14px;
+  font-weight: 300;
 }
