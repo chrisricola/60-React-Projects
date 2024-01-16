@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Header = () => {
   return (
@@ -7,7 +8,8 @@ const Header = () => {
             <div className="hero-banner">
                 <h1>Game of Thrones</h1>
                 <p>When people ask you what happened here, tell the m the North remembers.</p>
-                <a href="#" className='hero-btn'>Characters</a>
+                <NavLink to={"/characters"}><button className='hero-btn'>Characters</button></NavLink>
+                
             </div>
         </div>
     </header>
