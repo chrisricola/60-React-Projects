@@ -1,11 +1,16 @@
 import React from "react";
-import Header from "./components/Header";
 import NavBar from  "./components/Navbar"
-import Main from "./components/Main";
+import Pages from "./components/Pages";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
-    <Main/>
+    <div>
+      <BrowserRouter>
+        <NavBar/>
+        <Pages/> 
+      </BrowserRouter>
+    </div>
   );
 }
 
