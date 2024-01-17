@@ -2,21 +2,23 @@ import React, { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom';
 
 const Main = () => {
-
     const [characters, setCharacters] = useState([]);
 
+
     useEffect(() => {
-        getCharacter();
+      getcharcter();
     }, []);
-
-    const getCharacter = async () => {
-        const api  = await fetch('https://thronesapi.com/api/v2/Characters' );
-        const data = await api.json();
-
-        setCharacters(data);
-    }
-
-    
+  
+  
+    const getcharcter = async () => {
+  
+      const api = await fetch("https://thronesapi.com/api/v2/Characters");
+      const data = await api.json();
+  
+  
+      setCharacters(data);
+  
+    };
 
   return (
     <div className='main'>
@@ -27,7 +29,7 @@ const Main = () => {
             characters.map((item) => (
                 
                 <div className="col-lg-4 col-md-6">
-                    <NavLink to={`/characters/:${item.id}`} style={{textDecoration: 'none', color: "#fff"}}>
+                    <NavLink to={`/characters/${item.id}`} style={{textDecoration: 'none', color: "#fff"}}>
                         <div className="project-card">
                         <img src={item.imageUrl} alt="" />
                         <div className="info">
