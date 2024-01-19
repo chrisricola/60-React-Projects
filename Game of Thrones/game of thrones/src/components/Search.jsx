@@ -5,16 +5,16 @@ const Search = () => {
     const params = useParams();
 
     const [searchedCharacters, setSearchedCharacters] = useState([]);
-  const getSearched = async (name) => {
 
-    const api = await fetch(`https://thronesapi.com/api/v2/Characters/${name}`);
-    const data = await api.json();
-    setSearchedCharacters(data);
-  }
+    const getSearched = async (name) => {
+        const api = await fetch(`https://thronesapi.com/api/v2/Characters/${name}`);
+        const data = await api.json();
+        setSearchedCharacters(data);
+    }
 
-  useEffect(() => {
-    getSearched(params.search);
-  }, [params.search]);
+    useEffect(() => {
+        getSearched(params.search);
+    }, [params.search]);
 
     const [qoutes, setQoutes] = useState([]);
     
@@ -31,14 +31,20 @@ const Search = () => {
     }, [searchedCharacters.firstName]);
 
   return (
-    <div>
-        <h1>{searchedCharacters.fullName}</h1>
+    <div className='search'>
+      <div className="search-detail">
         <img src={searchedCharacters.imageUrl} alt=""/>
+      
+      <div>
+        <h4>{searchedCharacters.fullName}</h4>
+        <h5>{searchedCharacters.title}</h5>
         {
           qoutes.map((item) => {
             return ( <p>{item.sentence}</p>)
           })
         }
+        </div>
+        </div>
     </div>
   )
 }
