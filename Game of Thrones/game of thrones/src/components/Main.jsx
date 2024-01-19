@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom';
+// import { Person4 } from '@mui/icons-material';
 
 const Main = () => {
     const [characters, setCharacters] = useState([]);

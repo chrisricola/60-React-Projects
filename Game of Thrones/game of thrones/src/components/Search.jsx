@@ -1,5 +1,7 @@
+import { House, Person4 } from '@mui/icons-material';
 import React, {useEffect, useState} from 'react'
 import { useParams } from 'react-router-dom'
+
 
 const Search = () => {
     const params = useParams();
@@ -36,8 +38,9 @@ const Search = () => {
         <img src={searchedCharacters.imageUrl} alt=""/>
       
       <div>
-        <h4>{searchedCharacters.fullName}</h4>
+        <h4><Person4/>{searchedCharacters.fullName}</h4>
         <h5>{searchedCharacters.title}</h5>
+        <p><House/> /{searchedCharacters.family}</p>
         {
           qoutes.map((item) => {
             return ( <p>{item.sentence}</p>)
