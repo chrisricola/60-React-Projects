@@ -7,9 +7,9 @@ import UpcomingBirthday from './UpcomingBirthday';
 function App() {
   return (
     <div className='body'>
-      <h1>Today's Birthday</h1>
+      <h1 style={{color: 'lightpink'}}>Today's Birthday</h1>
       <Card />
-      <h1>Upcoming Birthday</h1>
+      <h1 style={{color: 'lightgreen'}}>Upcoming Birthday</h1>
       <UpcomingBirthday />
     </div>
   );

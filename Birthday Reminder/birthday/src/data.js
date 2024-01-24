@@ -19,23 +19,23 @@ const data = [
     {
         id: 3,
         name: "Boni Rokit",
-        day: 22,
-        month: 5,
+        day: 28,
+        month: 1,
         age: 29,
         gender: "female"
     },
     {
         id: 4,
         name: "Mike Herrera",
-        day: 10,
-        month: 18,
+        day: 23,
+        month: 1,
         age: 49,
         gender: "male"
     },
     {
         id: 5,
         name: "Diana Smith",
-        day: 9,
+        day: 23,
         month: 1,
         age: 66,
         gender: "female"
@@ -59,8 +59,8 @@ const data = [
     {
         id: 8,
         name: "Chat Vato",
-        day: 12,
-        month: 12,
+        day: 26,
+        month: 1,
         age: 26,
         gender: "male"
     },
