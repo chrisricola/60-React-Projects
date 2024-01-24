@@ -6,7 +6,7 @@ import UpcomingBirthday from './UpcomingBirthday';
 
 function App() {
   return (
-    <div>
+    <div className='body'>
       <h1>Today's Birthday</h1>
       <Card />
       <h1>Upcoming Birthday</h1>

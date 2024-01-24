@@ -43,15 +43,15 @@ const data = [
     {
         id: 6,
         name: "Gloria Mora",
-        day: 24,
-        month: 3,
+        day: 23,
+        month: 1,
         age: 33,
         gender: "female"
     },
     {
         id: 7,
         name: "Flaco Paco",
-        day: 22,
+        day: 25,
         month: 1,
         age: 36,
         gender: "male"
