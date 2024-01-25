@@ -1,5 +1,6 @@
 import React from 'react'
 import data from './data';
+import img from './images/upcoming birthday.jpg'
 
 const UpcomingBirthday = () => {
 
@@ -13,8 +14,11 @@ const UpcomingBirthday = () => {
           <div>
             {
               bod.day > day && bod.month === month + 1 &&
-              <div>
-                <h1>{bod.name}</h1>
+              <div className=' card card-2'>
+                <div className="img">
+                  <img src={img} alt="" />
+                </div>
+                <h4 className='name2'>{bod.name} on {bod.day}</h4>
               </div>
             }
           </div>
