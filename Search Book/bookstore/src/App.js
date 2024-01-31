@@ -1,14 +1,12 @@
 import React from 'react'
-import Navbar from './components/Navbar'
-import {BrowserRouter} from 'react-router-dom';
-import Pages from './components/Pages';
+// import Navbar from './components/Navbar'
+// import {BrowserRouter} from 'react-router-dom';
+// import Pages from './components/Pages';
+import Main from './components/Main';
 
 const App = () => {
   return (
-    <BrowserRouter>
-    <Navbar />
-    <Pages />
-    </BrowserRouter>
+    <Main/>
   )
 }
 
