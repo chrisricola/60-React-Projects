@@ -3,9 +3,9 @@ import React, {useState} from 'react'
 
 const Main = () => {
     const [books, setBooks] = useState([]);
-    axios.get('https://www.googleapis.com/books/v1/volumes?q=' + 'berserk' + '=free-ebooks&key=AIzaSyAQsVMU_m6dAugbBVcxNfSD61bcYe4MNYI' + '&maxResults=30')
-        .then(res => setBooks(res.data.items))
-        .catch(err => console.log(err))
+    axios.get('https://www.googleapis.com/books/v1/volumes?q=' + 'lies' + '=free-ebooks&key=AIzaSyAQsVMU_m6dAugbBVcxNfSD61bcYe4MNYI&maxResults=30')
+      .then(res => setBooks(res.data.items))
+      .catch(err => console.log(err))
   return (
     <div>
         {
