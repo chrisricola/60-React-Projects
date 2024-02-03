@@ -1,23 +1,36 @@
 import axios from 'axios';
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
+import { useParams } from 'react-router-dom';
 
 const Main = () => {
     const [books, setBooks] = useState([]);
-    axios.get('https://www.googleapis.com/books/v1/volumes?q=' + 'lies' + '=free-ebooks&key=AIzaSyAQsVMU_m6dAugbBVcxNfSD61bcYe4MNYI&maxResults=30')
-      .then(res => setBooks(res.data.items))
-      .catch(err => console.log(err))
+    const params = useParams(); 
+
+    const getBooks = (name) => {
+        axios.get('https://www.googleapis.com/books/v1/volumes?q=' + name + '=free-ebooks&key=AIzaSyBwNNlsOxRG1CanfoEZkZtlFplVnRWAQvc&maxResults=30')
+          .then(res => setBooks(res.data.items))
+          .catch(err => console.log(err))
+      }
+    
+      useEffect(() => {
+        getBooks(params.name);
+      }, [params.name]);
   return (
-    <div>
+    <div className='row' style={{ margin: '50px'}}>
         {
             books.map((item) => {
                 let thumbnail = item.volumeInfo.imageLinks && item.volumeInfo.imageLinks.smallThumbnail; 
                 return (
-                    <div>
-                        <h1>Hello</h1>
-                        <img src={thumbnail} alt="" />
-                        <h5>{item.volumeInfo.title}</h5>
-                        <p>{item.volumeInfo.authors}</p>
+                    <div className="col-lg-2 col-md-3 col-sm-6">
+                        <div className='projectCard'>
+                            <img src={thumbnail} alt="" style={{marginTop: "20px", width: "120px", height:"150px"}}/>
+                            <div className="info">
+                                <h5>{item.volumeInfo.title}</h5>
+                                <p>{item.volumeInfo.authors}</p>
+                            </div>
+                        </div>
                     </div>
+                    
                     
                 ) 
             })
@@ -29,3 +42,7 @@ const Main = () => {
 export default Main
 
 // AIzaSyAQsVMU_m6dAugbBVcxNfSD61bcYe4MNYI
+
+// AIzaSyDng0qhpyvXLUhgueXIkJg_fggDGl5gG5o
+
+// AIzaSyBwNNlsOxRG1CanfoEZkZtlFplVnRWAQvc
