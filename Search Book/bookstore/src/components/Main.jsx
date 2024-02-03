@@ -25,8 +25,11 @@ const Main = () => {
                         <div className='projectCard'>
                             <img src={thumbnail} alt="" style={{marginTop: "20px", width: "120px", height:"150px"}}/>
                             <div className="info">
-                                <h5>{item.volumeInfo.title}</h5>
-                                <p>{item.volumeInfo.authors}</p>
+                                <h5 style={{color: "black", fontSize: "12px"}}>{item.volumeInfo.title}</h5>
+                                <p style={{color: "black", fontSize: "12px"}}>{item.volumeInfo.authors}</p>
+                                <button className='btn btn-sm btn-success' style={{marginBottom:"40px", marginTop:"0px"}}>
+                                    <a href={item.volumeInfo.previewLink} style={{textDecoration:"none",color:"white" }}>Get Book</a>
+                                </button>
                             </div>
                         </div>
                     </div>
