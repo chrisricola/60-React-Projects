@@ -109,4 +109,52 @@ body {
   color: #fff;
   cursor: pointer;
 }
- 
+
+.body {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('./images/Book-home.jpg');
+  background-repeat: no-repeat;
+  object-fit: cover;
+  object-position: center;
+  margin-top: 20px;
+}
+
+.main {
+  position: relative;
+  height: 25vh;
+  margin: 50vh 0 20px 0;
+  background: url("https://cdn.pixabay.com/photo/2014/12/21/23/28/shelf-575408_960_720.png");
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.genre1{
+  position: absolute;
+  height: 150px;
+  background-color: transparent;
+  color: #000;
+  top: -100px;
+  left: 100px;
+}
+
+.body input {
+  margin-top: 50px;
+  width: 600px;
+}
+
+.genre1 img {
+  height: 100%;
+  margin: 0 12px;
+  width: 50px;
+  z-index: 2;
+}
+
+.genre1 img:hover {
+  transform: scale(1.05);
+  transform: translate(25px);
+  opacity: 0.8;
+  cursor: pointer;
+  z-index: 2;
+}
+
+

@@ -10,7 +10,7 @@ const Genre = () => {
   const navigate =useNavigate();
   const [name, setName] = useState('');
   return (
-    <div className='body'>
+    <div className="body">
       <div>
         <input type="text" onChange={(e) => {setName(e.target.value)}}/>
         <button className='hero-btn' onClick={() => navigate('/genre/' + name)}>Search</button>
