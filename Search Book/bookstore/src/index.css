@@ -157,4 +157,15 @@ body {
   z-index: 2;
 }
 
+@media screen and (max-width: 750px) {
+  .main {
+    display: none;
+  }
 
+  .body input {
+    max-width: 60%;
+    margin-top: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
