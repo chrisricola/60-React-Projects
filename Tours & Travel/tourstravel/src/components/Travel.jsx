@@ -1,14 +1,14 @@
 import React from 'react'
-import data from '../data'
+import destinations from '../destinations'
+import Footer from './Footer'
 
-
-const Main = () => {
+const Travel = () => {
   return (
     <div className='main'>
-        <h4>Our Premium Packages</h4>
+        <h4>Our Destinations</h4>
         <div className="row">
             {
-                data.map((item) => {
+                destinations.map((item) => {
                     return (
                         <div className=" col-lg-4 col-md-6 col-sm-12">
                             <div className="card-body">
@@ -22,8 +22,9 @@ const Main = () => {
                 })
             }
         </div>
+        <Footer />
     </div>
   )
 }
 
-export default Main
+export default Travel
