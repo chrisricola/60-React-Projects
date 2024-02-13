@@ -1,5 +1,6 @@
 import React from 'react'
 import data from '../data'
+import { NavLink } from 'react-router-dom'
 
 
 const Main = () => {
@@ -16,7 +17,7 @@ const Main = () => {
                             </div>
                             <img src={item.url} alt='' />
                             <button className='price'>{item.day}Days: {item.price}</button>
-                            <button className='hero-btn btn-2'>Visit</button>
+                            <NavLink to={'/travel'}><button className='hero-btn btn-2'>Visit</button></NavLink>
                         </div>
                     )
                 })

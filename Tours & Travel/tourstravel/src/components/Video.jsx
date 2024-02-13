@@ -1,6 +1,7 @@
 import React from 'react'
 import video1 from '../images/sea-24216.mp4'
 import ReactPlayer from 'react-player/lazy'
+import { NavLink } from 'react-router-dom'
 
 const Video = () => {
   return (
@@ -9,7 +10,7 @@ const Video = () => {
         <div className="player">
             <ReactPlayer controls url={video1} />
             <p className='p'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, inventore!</p>
-            <button className="hero-btn btn-3">Visit</button>
+            <NavLink to={'/travel'}><button className="hero-btn btn-3">Visit</button></NavLink>
             <div />
         </div>
     </div>
