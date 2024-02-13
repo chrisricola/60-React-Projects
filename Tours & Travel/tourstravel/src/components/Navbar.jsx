@@ -9,7 +9,7 @@ const Navbar = () => {
         <NavLink to={'/'}><img src={logo} alt="" /></NavLink>
         <ul>
             <NavLink to={'/travel'} style={{textDecoration: "none", color: "rgb(108,108,108)"}}><li>Travel</li></NavLink>
-            <NavLink to={'/price'} style={{textDecoration: "none", color: "rgb(108,108,108)"}}><li>Billing</li></NavLink>
+            <NavLink to={'/pricing'} style={{textDecoration: "none", color: "rgb(108,108,108)"}}><li>Billing</li></NavLink>
         </ul>
     </div>
   )

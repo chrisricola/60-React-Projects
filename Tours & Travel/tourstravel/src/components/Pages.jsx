@@ -2,15 +2,17 @@ import React from 'react'
 import {Routes, Route} from 'react-router-dom'
 import Home from './Home'
 import Travel from './Travel'
-import Price from './Price'
+import Pricing from './Pricing'
 
-const Pages = () => {
+const Pages = ({price, setPrice, places, setPlaces}) => {
   return (
-    <Routes>
-        <Route path='/' and element={<Home/>} />
-        <Route path='/travel' and element={<Travel/>} />
-        <Route path='/price' and element={<Price/>} />
-    </Routes>
+    <div>
+       <Routes>
+            <Route path='/' and element={<Home />} />
+            <Route path='/travel' and element={<Travel prices={price} setPrices={setPrice} setPlace={setPlaces} place={places} />} />
+            <Route path='/pricing' and element={<Pricing  prices={price} place={places}/>} />
+        </Routes>
+    </div>
   )
 }
 
