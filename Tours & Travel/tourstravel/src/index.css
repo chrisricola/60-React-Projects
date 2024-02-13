@@ -236,3 +236,36 @@ body {
   font-size: 16px;
   color: #fff;
 }
+
+.pricing-1 {
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('./images/indiana-dunes-state-park-1848559_1920.jpg');
+  background-repeat: no-repeat;
+  object-fit: cover;
+  min-height: 95vh;
+}
+
+.pricing-1 h1 {
+  text-transform: uppercase;
+  margin: 15px auto;
+  color: lightseagreen;
+  letter-spacing: 5px;
+}
+
+.card-title {
+  margin-top: 50px;
+  text-transform: uppercase;
+  color: lightcoral;
+  font-style: 24px;
+  letter-spacing: 0.4rem;
+}
+
+.pricing-1 ul li {
+  list-style: none;
+  font-size: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin: 10px 20px 10px 0;
+  color: #fff;
+  font-weight: 400;
+  cursor: pointer;
+}
