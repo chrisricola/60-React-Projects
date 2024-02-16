@@ -1,8 +1,8 @@
 import React from 'react'
-import {Home, Luggage, Man, Pages, Settings} from '@mui/icons-material'
-import {Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText} from '@mui/material'
+import {Home, Luggage, Man, ModeNightRounded, Pages, Settings} from '@mui/icons-material'
+import {Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Switch} from '@mui/material'
 
-const Sidebar = () => {
+const Sidebar = ({Setmode, mode}) => {
   return (
     <Box flex={1} p={2}> 
         <Box sx={{position: "fixed", width:"5%"}}>
@@ -45,6 +45,15 @@ const Sidebar = () => {
                             <Settings sx={{color: "#ffe3a3"}}/>
                         </ListItemIcon>
                         <ListItemText primary="Settings"/>
+                    </ListItemButton>
+                </ListItem>
+
+                <ListItem disablePadding>
+                    <ListItemButton component="a" href='#home'>
+                        <ListItemIcon>
+                            <ModeNightRounded sx={{color: "#ffe3a3"}}/>
+                        </ListItemIcon>
+                        <Switch onChange={e=>Setmode(mode === 'light' ? 'dark' : 'light')}/>
                     </ListItemButton>
                 </ListItem>
             </List>
