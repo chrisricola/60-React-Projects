@@ -6,6 +6,7 @@ import ProgressLine from './ProgressLine'
 import img1 from '../hosting.png'
 import img2 from '../money-bag.png'
 import img3 from '../user.png'
+import Chart from './Chart'
 
 
 
@@ -18,10 +19,13 @@ const Feed = () => {
           <ProfileCard bgcolor="#21295c" h1="Revenue" h2="$ 50,345" img={img2} pr="Total Revenue" />
           <ProfileCard bgcolor="#21295c" h1="Users" h2="32.50" img={img3} pr="Total Users" />
           </Stack>
+
           <Stack direction={"row"} spacing={4}>
             <MediaControlCard />
             <ProgressLine />
           </Stack>
+
+          <Chart />
       </Stack>
     </Box>
   )
