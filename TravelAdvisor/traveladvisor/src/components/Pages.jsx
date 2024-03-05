@@ -5,10 +5,10 @@ import Main from './Main'
 
 const Pages = () => {
   return (
-    <Route>
-        <Routes path="/" element={<Home/>} />
-        <Routes path="/:name" element={<Main/>} />
-    </Route>
+    <Routes>
+        <Route path="/" and element={<Home/>} />
+        <Route path="/:name" and element={<Main/>} />
+    </Routes>
   )
 }
 

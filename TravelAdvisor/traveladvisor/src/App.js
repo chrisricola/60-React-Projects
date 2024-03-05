@@ -1,12 +1,12 @@
 import React from 'react'
 import { BrowserRouter} from 'react-router-dom'
-import Home from './components/Home'
 import './index.css'
+import Pages from './components/Pages'
 
 const App = () => {
   return (
     <BrowserRouter>
-      <Home />
+      <Pages />
     </BrowserRouter>
   )
 }
