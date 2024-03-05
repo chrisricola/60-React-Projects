@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
+import axios from 'axios';
+import Detail from './Detail';
 
 const Main = () => {
     const params = useParams();
@@ -16,7 +18,9 @@ const Main = () => {
         getPlaces(params.name);
     });
   return (
-    <div>Main</div>
+    <div>
+      <Detail places={places} />
+    </div>
   )
 }
 
