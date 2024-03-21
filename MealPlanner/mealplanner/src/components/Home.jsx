@@ -7,6 +7,8 @@ const Home = () => {
 
   const [meal, setMeal] = useState("");
   const [recipes, setRecipes] = useState([]);
+  const [item, setItem] = useState();
+  const [show, setShow] = useState();
 
   const getSearched = (e) => {
     if(e.key === "Enter") {
