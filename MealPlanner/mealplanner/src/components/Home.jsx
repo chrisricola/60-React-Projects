@@ -2,6 +2,7 @@ import axios from 'axios'
 import React, { useState } from 'react'
 import '../index.css'
 import Main from './Main';
+import Modal from './Modal';
 
 const Home = () => {
 
@@ -27,7 +28,8 @@ const Home = () => {
                 onKeyPress={getSearched}/>
             </div>
         </header>
-        <Main recipes={recipes}/>
+        <Modal item={item} />
+        <Main recipes={recipes} setItem={setItem} setShow={setShow} />
     </div>
   )
 }

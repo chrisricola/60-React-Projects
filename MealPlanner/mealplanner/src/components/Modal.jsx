@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Modal = () => {
+const Modal = ({item}) => {
   return (
     <div>
         results[0].nutrition.nutrients[0].name
