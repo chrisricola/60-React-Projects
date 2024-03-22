@@ -9,7 +9,7 @@ const Home = () => {
   const [meal, setMeal] = useState("");
   const [recipes, setRecipes] = useState([]);
   const [item, setItem] = useState();
-  const [show, setShow] = useState();
+  const [show, setShow] = useState(false);
 
   const getSearched = (e) => {
     if(e.key === "Enter") {
@@ -28,7 +28,7 @@ const Home = () => {
                 onKeyPress={getSearched}/>
             </div>
         </header>
-        <Modal item={item} />
+        <Modal item={item} show={show}/>
         <Main recipes={recipes} setItem={setItem} setShow={setShow} />
     </div>
   )
