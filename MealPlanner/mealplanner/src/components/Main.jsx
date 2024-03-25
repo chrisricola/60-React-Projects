@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 const Main = ({recipes, setShow, setItem}) => {
   return (
@@ -11,7 +11,7 @@ const Main = ({recipes, setShow, setItem}) => {
                             <img src={recipe.image} alt={recipe.title} className='card-image-top' style={{margin: 20}}/>
                             <div className="card-header"><h6 style={{color: "black", fontSize: "16px"}}>{recipe.title}</h6></div>
                             <div className="card-body" style={{padding: 15}}>
-                                <button className='btn btn-success' onClick={() => {setShow(true); setItem(recipe)}}>View</button>
+                                <button className='btn btn-success' onClick={() => {setShow(true); setItem(recipe)}}><a href='#dish' style={{textDecoration: "none", color: "white"}}>View</a></button>
                             </div>
                         </div>
                     </div>
