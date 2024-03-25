@@ -6,9 +6,9 @@ const Nav = () => {
     <div className='navbar'>
         <span>Calories: 0</span>
         <ul>
-            <li>Fat</li>
-            <li>Carb</li>
-            <li>Protein</li>
+            <li>Fat: 0</li>
+            <li>Carb: 0</li>
+            <li>Protein: 0</li>
         </ul>
     </div>
   )
