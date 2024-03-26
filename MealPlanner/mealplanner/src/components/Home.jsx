@@ -4,7 +4,7 @@ import '../index.css'
 import Main from './Main';
 import Modal from './Modal';
 
-const Home = () => {
+const Home = ({protein, setProtein, fat, setFat, carb, setCarb, calories, setCalories}) => {
 
   const [meal, setMeal] = useState("");
   const [recipes, setRecipes] = useState([]);
@@ -28,7 +28,7 @@ const Home = () => {
                 onKeyPress={getSearched}/>
             </div>
         </header>
-        <Modal item={item} show={show}/>
+        <Modal item={item} show={show} protein={protein} setProtein={setProtein} fat={fat} setFat={setFat} carb={carb} setCarb={setCarb} calories={calories} setCalories={setCalories}/>
         <Main recipes={recipes} setItem={setItem} setShow={setShow} />
     </div>
   )

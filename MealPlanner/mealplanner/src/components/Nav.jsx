@@ -1,14 +1,14 @@
 import React from 'react'
 import "../index.css"
 
-const Nav = () => {
+const Nav = ({protein, fat, calories, carb}) => {
   return (
     <div className='navbar'>
-        <span>Calories: 0</span>
+        <span>Calories: {calories}</span>
         <ul>
-            <li>Fat: 0</li>
-            <li>Carb: 0</li>
-            <li>Protein: 0</li>
+            <li>Fat: {fat}</li>
+            <li>Carb: {carb}</li>
+            <li>Protein: {protein} g</li>
         </ul>
     </div>
   )
