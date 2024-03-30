@@ -1,8 +1,11 @@
 import React from 'react'
+import Radio from './Radio'
 
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      <Radio />
+    </div>
   )
 }
 
