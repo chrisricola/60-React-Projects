@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { RadioBrowserApi } from "radio-browser-api"
+import { RadioBrowserApi } from "radio-browser-api";
+import AudioPlayer from "react-h5-audio-player";
+import "react-h5-audio-player/lib/styles.css";
 
 const Radio = () => {
 
     const [stationType, setStationType] = useState("all");
-    const [station, setStation] = useState();
+    const [stations, setStation] = useState();
 
     useEffect(() => {
         setupApi(stationType).then(data => {setStation(data)})
@@ -45,8 +47,31 @@ const Radio = () => {
                 </span>
             ))}
         </div>
+        <div>
+            <div className="row">
+                {
+                    stations && stations.map((station, index) => {
+                        return (
+                            <div className='col col-lg-4 col-md-6 col-sm-12' key={index}>
+                                <div className="card">
+                                    <img style={{width:80, height: 80}} className='card-img-top' src={station.favicon}/>    
+                                    <div className="card-header">
+                                        <h6>{station.name}</h6>
+                                    </div>
+                                 </div>
+                                 <AudioPlayer className='player' src={station.urlResolved} 
+                                 showJumpControls={false}
+                                 layout='stacked'
+                                 />
+                            </div>
+                        )
+                    })
+                }
+            </div>
+        </div>
+
     </div>
   )
 }
 
-export default Radio
+export default Radio;
