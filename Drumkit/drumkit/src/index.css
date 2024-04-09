@@ -1,13 +1,33 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./images/drum-wallpaper.jpg');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  margin: auto;
+  width: 70%;
+  text-align: center;
+}
+
+h1 {
+  margin: 20px;
+  font-size: 6rem;
+  font-family: 'Lobster', cursive;
+  color: #fff;
+}
+
+h4 {
+  margin: 20px 0;
+  font-size: 2rem;
+  font-family: 'Indie Flower', cursive;
+  color: #fff;
+}
+
+.img {
+  height: 100px;
+  width: 100px;
+  background: #fff;
+  background: 6px, solid, white;
+  margin-top: 30px;
+  margin-bottom: 60px;
 }
