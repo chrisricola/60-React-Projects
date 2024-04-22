@@ -1,8 +1,11 @@
 import React from 'react'
+import Dice from './Dice'
 
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      <Dice />
+    </div>
   )
 }
 
