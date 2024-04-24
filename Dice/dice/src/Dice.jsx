@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import list from './list';
 
-const Dice = () => {
+const Dice = ({setInstruction}) => {
   let x = 0, y = 0;
 
   const [target, setTarget] = useState();
@@ -37,7 +37,7 @@ const Dice = () => {
           <h4>Choose A Number</h4>
           <input type='text' placeholder='' className='input-bar' onChange={(e) => {setTarget(e.target.value)}}/>
           <button className='btn' onClick={() => start()}>Start</button>
-          <button className='btn'>Instruction</button>
+          <button className='btn'onClick={() => setInstruction(true)}>Instruction</button>
         </div>
     </div>
   )
