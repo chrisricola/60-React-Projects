@@ -2,7 +2,7 @@ import React from 'react'
 
 const Info = ({setInstruction}) => {
   return (
-    <div>
+    <div className='info'>
         <h1>Instruction</h1>
         <ul>
             <li>This is a two player game</li>

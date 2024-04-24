@@ -35,7 +35,9 @@ const Dice = ({setInstruction}) => {
             <img className='img2' src={list[y]} alt='' />
           </div>
           <h4>Choose A Number</h4>
+          
           <input type='text' placeholder='' className='input-bar' onChange={(e) => {setTarget(e.target.value)}}/>
+          <br />
           <button className='btn' onClick={() => start()}>Start</button>
           <button className='btn'onClick={() => setInstruction(true)}>Instruction</button>
         </div>

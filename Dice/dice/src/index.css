@@ -11,3 +11,87 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+h1 {
+  margin: 20px;
+  color: #21bf73;
+  font-size: 6rem;
+  font-family: "Lobster", cursive;
+}
+
+p {
+  font-size: 2rem;
+  font-family: "Indie Flower", cursive;
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+}
+
+img {
+  width: 80%;
+  height: 80%;
+}
+
+h4 {
+  margin: 15px 0;
+  font-size: 2rem;
+  font-family: "Indie-Flower", cursive;
+  color: #21bf73;
+}
+
+.input-bar {
+  margin: 5px 0;
+  height: 80px;
+  width: 80px;
+  border: 4px solid black;
+  font-weight: 900;
+  text-align: center;
+  font-family: "Indie-Flower", cursive;
+  font-size: 36px;
+  color: #21bf73;
+}
+
+.btn {
+  margin: 15px;
+  border-radius: 6px;
+  width: 200px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  background-color: whitesmoke;
+}
+
+.btn:hover {
+  background-color: black;
+  color: whitesmoke;
+}
+
+.info {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.info ul {
+  text-align: justify;
+  margin-top: 4rem;
+}
+
+.info ul li {
+  list-style: decimal;
+  font-size: 24px;
+  font-weight: bolder;
+  font-family: "Lobster", cursive;
+  margin: 10px;
+  letter-spacing: 1px;
+}
