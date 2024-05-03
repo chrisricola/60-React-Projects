@@ -15,7 +15,19 @@ const Main = () => {
         getCharacter();
     })
   return (
-    <div>Main</div>
+    <div>
+      <div className="row">
+        {
+          characters.map((item, id) =>(
+            <div className='col-lg-4 col-md-6 col-sm-12'> 
+            <div className="card">
+              <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${id+1}.svg`} alt='' />
+            </div>
+            </div> 
+          ))
+        }
+      </div>
+    </div>
   )
 }
 
