@@ -22,6 +22,12 @@ const Main = () => {
             <div className='col-lg-4 col-md-6 col-sm-12'> 
             <div className="card">
               <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${id+1}.svg`} alt='' />
+              <div className="card-body">
+                <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/${id+1}.png`} alt='' />
+                <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id+1}.png`} alt='' />
+                <h6>{item.name}</h6>
+                <button className='btn btn-success'>More</button>
+              </div>
             </div>
             </div> 
           ))
