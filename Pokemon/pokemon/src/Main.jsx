@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
+import './index.css';
 
 const Main = () => {
     const [characters, setCharacters] = useState([]);
@@ -20,12 +21,12 @@ const Main = () => {
       <div className="row">
         {
           characters.map((item, id) =>(
-            <div className='col-lg-4 col-md-6 col-sm-12'> 
+            <div className='col-lg-3 col-md-6 col-sm-12'> 
             <div className="card">
-              <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${id+1+offset}.svg`} alt='' />
+              <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${id+1+offset}.svg`} alt='' className='card-image-top'/>
               <div className="card-body">
-                <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/${id+1+offset}.png`} alt='' />
-                <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id+1+offset}.png`} alt='' />
+                <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/${id+1+offset}.png`} alt='' style={{height:100, width:100}}/>
+                <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id+1+offset}.png`} alt='' style={{height:100, width:100}}/>
                 <h6>{item.name}</h6>
                 <button className='btn btn-success'>More</button>
               </div>
