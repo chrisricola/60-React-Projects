@@ -53,6 +53,7 @@ body {
 
 .card-image-top {
   margin: 10px;
+  padding: 20px;
   width: 150px;
   height: 150px;
 }
@@ -70,3 +71,44 @@ body {
     margin: 0;
   }
 }
+
+.poke {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .pokemon {
+    position: relative;
+    margin: 10px;
+    padding: 20px;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://c4.wallpaperflare.com/wallpaper/436/677/92/pokemon-squirtle-bulbasaur-charmander-wallpaper-preview.jpg');
+    object-fit: cover;
+    height: 56vh;
+  }
+
+  .pokemon .card {
+    position: absolute;
+    left: 40%;
+    width: 400px;
+  }
+
+  .pokemon .img {
+    margin: 1rem 7rem;
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .pokemon {
+    position: relative;
+    margin: 10px 50px;
+  }
+
+  .pokemon .card {
+    height: 450px;
+  }
+}
+
+
+

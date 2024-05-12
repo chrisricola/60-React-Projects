@@ -16,14 +16,14 @@ const Main = () => {
 
     useEffect(() => {
         getCharacter();
-    }, []);
+    });
 
     const [ability1, setAbility1] = useState("");
     const [ability2, setAbility2] = useState("");
     const [height, setHeight] = useState(0);
     const [weight, setWeight] = useState(0);
     const [img, setImage] = useState("");
-    const [className, setClassName] = useState("");
+    const [className, setClassName] = useState('poke');
 
     
     const getPoke = async(url) => {
