@@ -17,6 +17,11 @@ const Home = () => {
                     <img src={list[0]} />
                     <img src={list[0]} alt="" />
                   </Box>
+                  <Box>
+                    <span className='dollar'>$</span>
+                    <input type='text' placeholder='' />
+                  </Box> 
+                  <button>Start</button>
                 </Stack>
               </Box>
               <Box flex={2} sx={{backgroundClip: "rgb(8, 195, 161)"}} />
