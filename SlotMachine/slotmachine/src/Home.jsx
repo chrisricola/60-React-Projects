@@ -1,7 +1,8 @@
 import React from 'react'
 import {Box, Stack} from '@mui/material';
 import img from '../src/images/slot2.jpg';
-import list from './list'
+import list from './list';
+import './index.css';
 
 const Home = () => {
   return (
@@ -9,19 +10,19 @@ const Home = () => {
         <Box>
             <Stack direction={"row"}>
               <Box flex={2} sx={{backgroundClip: "rgb(8, 195, 161)"}} />
-              <Box flex={2} sx={{textAlign: "center"}}>
+              <Box flex={3} sx={{textAlign: "center"}}>
                 <Stack direction={"column"} >
                   <Box sx={{postion:"relative"}}>
-                    <img src={img} alt="" />
-                    <img src={list[0]} alt="" />
-                    <img src={list[0]} />
-                    <img src={list[0]} alt="" />
+                    <img className='bc' src={img} alt="" />
+                    <img className='img-1' src={list[0]} alt="" />
+                    <img className='img-2' src={list[0]} />
+                    <img className='img-3' src={list[0]} alt="" />
                   </Box>
-                  <Box>
+                  <Box sx={{postion:"relative"}}>
                     <span className='dollar'>$</span>
-                    <input type='text' placeholder='' />
+                    <input type='text' placeholder='' className='input'/>
                   </Box> 
-                  <button>Start</button>
+                  <button className='btn'>Start</button>
                 </Stack>
               </Box>
               <Box flex={2} sx={{backgroundClip: "rgb(8, 195, 161)"}} />
