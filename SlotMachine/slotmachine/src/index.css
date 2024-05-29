@@ -8,6 +8,49 @@ body {
   background-color: rgb(8,195,161);
 }
 
+.navbar {
+  background-color: #fff;
+  margin: 20px 50x;
+  height: 50px;
+  display: flex;
+  font-size: 16px;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.navbar h4 {
+  font-size: 40px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgb(118,118,118);
+}
+
+.navbar h5 {
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgb(118,118,118);
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li{
+  text-decoration: none;
+  list-style: none;
+  margin-right: 15px;
+  margin-top: 20px;
+  background: transparent;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 18px;
+}
+
 .img-1 {
   position: absolute;
   top: 220px;
