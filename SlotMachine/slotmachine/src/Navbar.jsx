@@ -1,13 +1,13 @@
 import React from 'react'
 
-const Navbar = () => {
+const Navbar = ({status, profit, loss}) => {
   return (
     <div className='navbar'>
         <h5>Slot Machine</h5>
-        <h4>Success</h4>
+        <h4>{status}</h4>
         <ul>
-            <li>Win $0</li>
-            <li>Loss $0</li>
+            <li>Win ${profit}</li>
+            <li>Loss ${loss}</li>
         </ul>
     </div>
   )

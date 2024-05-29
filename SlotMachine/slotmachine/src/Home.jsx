@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Box, Stack } from '@mui/material';
 import img from '../src/images/slot2.jpg';
 import list from './list';
 import './index.css';
 
-const Home = () => {
+const Home = ({setStatus, setProfit, setLoss, profit, loss}) => {
+
+  const [amount, setAmount] = useState(0);
   const start = () => {
     let secondsRemaining = 20;
 
@@ -21,9 +23,11 @@ const Home = () => {
       if(secondsRemaining === 0) {
         clearInterval(interval);
         if(number1 === number2 && number2 === number3) {
-          console.log("win")
+          setStatus("Success");
+          setProfit(profit + amount);
         } else {
-          console.log("loss");
+          setStatus("Loser")
+          setLoss(loss + amount)
         }
       }
       secondsRemaining--;
@@ -46,6 +50,7 @@ const Home = () => {
                   <Box sx={{ position: "relative" }}>
                     <span className='dollar'>$</span>
                     <input type='text' placeholder='Amount' className='input'
+                    onChange={(e) => setAmount(Number(e.target.value))}
                      />
                   </Box>
 
