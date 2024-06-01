@@ -1,8 +1,11 @@
 import React from 'react'
+import Marvel from './Marvel'
 
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      <Marvel />
+    </div>
   )
 }
 
