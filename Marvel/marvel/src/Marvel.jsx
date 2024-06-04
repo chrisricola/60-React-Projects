@@ -19,7 +19,7 @@ const Marvel = () => {
         {
           characters.map((item) => (
             <div className='col-lg-3 com-md-6'>
-                <div className="card">
+                <div className="card" styl={{margin: 20}}>
                   <img src={item.thumbnail.path + "." + item.thumbnail.extension} alt='' className='card-image-top' />
                   <h4 className='card-header'>{item.name}</h4>
                   <div className="card-body">
