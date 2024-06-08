@@ -24,3 +24,32 @@ body {
   }
 }
 
+.character {
+  margin: 15px;
+  padding: 10px;
+}
+
+.character img {
+  height: 350px;
+  width: 350px;
+  object-fit: cover;
+}
+
+.character h4 {
+  text-transform: uppercase;
+  font-size: 30px;
+  letter-spacing: 0.4rem;
+  color: rgba(254, 75, 75);
+}
+
+.character p {
+  max-width: 35rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+  color: rgba(0,0,0,0.6);
+}
+

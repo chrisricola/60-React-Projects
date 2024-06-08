@@ -35,7 +35,7 @@ const Marvel = () => {
           ))
         }
       </div>}
-      {show === true && <Hero setShow={setShow} heroData={heroData}/>}
+      {show === true && <Hero setShow={setShow} heroData={heroData} />}
     </div>
   )
 }
