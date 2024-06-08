@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Marvel from './Marvel'
 import Search from './Search'
 
 const App = () => {
+
+  const [search, setSearch] = useState("spider")
   return (
     <div>
-      <Search />
-      <Marvel />
+      <Search setSearch={setSearch}/>
+      <Marvel search={search}/>
     </div>
   )
 }
