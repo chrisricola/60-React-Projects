@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Meme from './Meme';
 
 const GetMeme = () => {
     const [meme, setMeme] = useState([]);
@@ -25,7 +26,7 @@ const GetMeme = () => {
               <div className="card">
                 <img src={item.preview[2]} alt='' />
                 <div className="card-body">
-                  <button className='btn btn-info' onClick={() => {setShow(true), setMemeData(item)}}>View</button>
+                  <button className='btn btn-info' onClick={() => {setShow(true); setMemeData(item)}}>View</button>
                 </div>
               </div>
             </div>
@@ -34,7 +35,7 @@ const GetMeme = () => {
       </div>
       }
       {
-      show === true && <Meme set={show} memeData={memeData}/>
+      show === true && <Meme setShow={setShow} memeData={memeData}/>
     }
     </div>
   )
