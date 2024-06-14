@@ -22,7 +22,7 @@ const GetMeme = () => {
       <div className="row">
         {
           meme.map((item) => (
-            <div className="col-lg-4 col-md-6 col-sm-12">
+            <div className="col-lg-3 col-md-6 col-sm-12">
               <div className="card">
                 <img src={item.preview[2]} alt='' />
                 <div className="card-body">
