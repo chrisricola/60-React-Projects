@@ -2,15 +2,14 @@ import React, { useState } from 'react'
 import format from './format';
 import Image from './Image';
 
-const InputSrc = () => {
-    const [captions3, setCaptions3] = useState(['', '']);
+const InputSrc3 = () => {
+    const [captions, setCaptions] = useState(["", "", "", "", "", ""]);
 
     const col = 2;
-
     const updateCaption = (e, index) => {
         const text = e.target.value || "";
-        setCaptions3(
-            captions3.map((c, i) => {
+        setCaptions(
+            captions.map((c, i) => {
                 if(index === i){
                     return text
                 } else {
@@ -20,7 +19,7 @@ const InputSrc = () => {
         )
     }
 
-    console.log(captions3)
+    console.log(captions)
   return (
     <div className='input'>
         {
@@ -29,10 +28,10 @@ const InputSrc = () => {
             ))
         }
         <div>
-            <Image captions={captions3} col={col}/>
+            <Image captions={captions} col={col}/>
         </div>
     </div>
   )
 }
 
-export default InputSrc
+export default InputSrc3
