@@ -1,10 +1,10 @@
 import React from 'react'
-import InputSrc from './components/InputSrc'
+import Collage from './components/Collage'
 
 const App = () => {
   return (
     <div>
-      <InputSrc />
+      <Collage />
     </div>
   )
 }
