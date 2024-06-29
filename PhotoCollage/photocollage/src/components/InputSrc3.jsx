@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import format from './format';
 import Image from './Image';
 
-const InputSrc3 = () => {
+const InputSrc3 = ({list}) => {
     const [captions, setCaptions] = useState(["", "", "", "", "", ""]);
 
     const col = 2;
@@ -23,7 +23,7 @@ const InputSrc3 = () => {
   return (
     <div className='input'>
         {
-            format[1].map((c, index) => (
+            format[list].map((c, index) => (
                 <input type='text' className='input-bar' onChange={(e) => updateCaption(e, index)} key={index}/>
             ))
         }
