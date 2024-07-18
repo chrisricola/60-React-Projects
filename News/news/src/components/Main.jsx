@@ -14,8 +14,25 @@ const Main = () => {
         console.log(data.articles);
     }
   return (
-    <div>
-
+    <div className='news'>
+      <div className="row">
+        {
+          news.map((item) => (
+            <div className="col col-lg-4 col-md-6 col-sm-12">
+              <div className="card">
+                <img src={item.urlToImage} alt="" className='card-img-top'/>
+                <h6 className="card-header">{item.title}</h6>
+                <div className="card-body">
+                  <p>{item.description}</p>
+                  <button className='btn btn-success'>
+                    <a href={item.url}>More</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
     </div>
   )
 }
