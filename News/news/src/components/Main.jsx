@@ -30,9 +30,9 @@ const Main = () => {
                 <img src={item.urlToImage} alt="" className='card-img-top' onError={setImage}/>
                 <h6 className="card-header">{item.title}</h6>
                 <div className="card-body">
-                  <p className='news-text'>{item.description}</p>
+                  <p className='news-text' style={{fontSize: 14 }}>{item.description}</p>
                   <button className='btn btn-success'>
-                    <a href={item.url}>More</a>
+                    <a style={{textDecoration: "none", color:"white"}} href={item.url}>More</a>
                   </button>
                 </div>
               </div>

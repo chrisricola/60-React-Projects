@@ -75,3 +75,32 @@ body {
   color: #fff;
   cursor: pointer;
 }
+
+.news {
+  margin: 10px 0;
+}
+
+.row {
+  margin: 10px 10px;
+}
+
+.card {
+  height: 480px;
+}
+
+.card img {
+  height: 240px;
+  object-fit: cover;
+}
+
+.card button {
+  margin: 3px;
+}
+
+.news-text {
+  font-size: 2rem;
+}
+
+.news-column {
+  padding: 3% 2%;
+}
