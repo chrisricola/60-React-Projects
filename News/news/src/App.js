@@ -1,12 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Hero from './components/Hero'
 import Main from './components/Main'
+import Catergory from './components/Catergory'
 
 const App = () => {
+
+  const [search, setSearch] = useState("general");
+
   return (
     <div>
       <Hero />
-      <Main />
+      <Catergory setSearch={setSearch}/>
+      <Main search={search}/>
     </div>
   )
 }
