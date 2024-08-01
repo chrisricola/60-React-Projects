@@ -9,7 +9,7 @@ const App = () => {
 
   return (
     <div>
-      <Hero />
+      <Hero setSearch={setSearch}/>
       <Catergory setSearch={setSearch}/>
       <Main search={search}/>
     </div>
