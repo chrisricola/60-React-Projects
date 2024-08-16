@@ -1,13 +1,16 @@
 import React from 'react'
 import './App.css'
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
+import StorefrontIcon from '@mui/icons-material/Storefront';
 
 
 
 const App = () => {
   return (
     <div className='app'>
-      <div className='header__logo'></div>
+      <div className='header__logo'>
+        <StorefrontIcon />
+      </div>
       <div className="header__search"></div>
       <div className="header__nav">
         <div className="nav__item">
