@@ -10,7 +10,7 @@ const Product = () => {
                 <p className="product__price">$30</p>
                 <div className="product__rating">⭐️⭐️</div>
             </div>
-            <img src="https://images-na.ssl-images-amazon.com/images/I/71mEsHyzSCL._SL1000_.jpg" alt="product" />
+            <img src="https://images-na.ssl-images-amazon.com/images/I/71mEsHyzSCL._SL1000_.jpg" alt="product" className='product__image'/>
             <button>Add to Basket</button>
         </div>
     </div>
