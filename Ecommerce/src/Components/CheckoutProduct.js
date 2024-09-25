@@ -1,7 +1,7 @@
 import React from 'react'
 import "./CheckoutProduct.css"
 
-const CheckoutProduct = ({id, image, title , price, rating}) => {
+const CheckoutProduct = ({ image, title , price, rating}) => {
   return (
     <div className="checkoutProduct">
        <img src={image} alt="" className="checkoutProduct__image" />
